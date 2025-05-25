@@ -10,6 +10,9 @@
   --title-color: #000028;
   --section-title-color: #FF0070;
   --text-color: #F1B2CE;
+  --hover-color: rgb(255 0 112 / 0.4);
+  --menu-item-color: #FF0070;
+  --link-focus-hover-color: #FF0070;
   --main-font: "IBM Plex Mono", sans-serif;
   --header-title-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --footer-title-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

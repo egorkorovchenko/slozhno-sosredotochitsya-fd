@@ -17,6 +17,9 @@
   --section-title-color: #ff0070;
   --text-color: #f1b2ce;
   --rec_display: block;
+  --hover-color: rgb(255 0 112 / 0.4);
+  --menu-item-color: #FF0070;
+  --link-focus-hover-color: #FF0070;
 }
 
 .theme-dark .page {

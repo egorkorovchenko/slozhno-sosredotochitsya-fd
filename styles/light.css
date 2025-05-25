@@ -11,11 +11,14 @@
   */
   --bg-image: url("../images/cover-image-light.png");
   --decor-color: #ff8dcb;
-  --bg-color: #ff8dcb;
+  --bg-color: #fef1f7;
   --header-color: #ffc2e6;
   --title-color: #353430;
   --section-title-color: #353430;
   --text-color: #353430;
+  --hover-color: rgb(50 49 45 / 0.4);
+  --menu-item-color: #353430;
+  --link-focus-hover-color: #353430;
   --rec_display: none;
 }
 
@@ -24,12 +27,15 @@
     /* Дублируем переменные светлой темы */
     --bg-image: url("../images/cover-image-light.png");
     --decor-color: #ff8dcb;
-    --bg-color: #ff8dcb;
+    --bg-color: #fef1f7;
     --header-color: #ffc2e6;
     --title-color: #353430;
     --section-title-color: #353430;
     --text-color: #353430;
+    --hover-color: rgb(50 49 45 / 0.4);
     --rec_display: none;
+    --menu-item-color: #353430;
+    --link-focus-hover-color: #353430;
   }
 }
 

@@ -1,10 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  margin: 0;
   font-family: var(--main-font);
   font-weight: bold;
   background-color: var(--bg-color);
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -71,15 +72,29 @@
   flex-direction: column;
   gap: 12px;
   align-self: center;
-  margin-inline-end: 2px;
-  margin-block-end: 68px;
+  padding-inline-end: 11px;
+  padding-block-end: 52px;
   list-style: none;
+}
+
+.header__theme-menu-item:focus-visible {
+  outline: none;
+  border-block-end: 1px solid var(--menu-item-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end: 1px solid var(--menu-item-color);
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--hover-color)
 }
 
 .header__theme-menu-button {
   border: none;
   padding: 1px 13px;
-  color: var(--decor-color);
+  color: var(--menu-item-color);
   font-family: var(--main-font);
   font-weight: normal;
   font-size: var(--content-font-size);
@@ -89,16 +104,15 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--decor-color);
+  outline: 1px solid var(--menu-item-color);
   pointer-events: none;
 }
 
 .header__title {
   justify-self: start;
-  margin-block-start: 0;
-  margin-inline-end: 2px;
-  margin-block-end: 55px;
-  margin-inline-start: 2px;
+  margin: 0;
+  padding-block-end: 38px;
+  padding-inline-start: 10px;
   color: var(--header-color);
   font-size: var(--header-title-size-mobile);
   line-height: 82.5%;
@@ -108,10 +122,8 @@
 .header__text {
   justify-self: end;
   max-width: 355px;
-  margin-block-start: 0;
-  margin-inline-end: 2px;
-  margin-block-end: 74px;
-  margin-inline-start: 2px;
+  margin-inline-end: 10px;
+  margin-block-end: 66px;
   color: var(--title-color);
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
@@ -125,10 +137,10 @@
   display: flex;
   flex-direction: column;
   gap: 51px;
-  margin-block-start: 33px;
-  margin-inline-end: 2px;
-  margin-block-end: 32px;
-  margin-inline-start: 2px;
+  margin-block-start: 41px;
+  margin-inline-end: 10px;
+  margin-block-end: 40px;
+  margin-inline-start: 10px;
 }
 
 .section__reason {
@@ -199,6 +211,14 @@
   line-height: var(--content-line-height);
 }
 
+.article__text-link:focus-visible {
+  outline: 1px solid var(--link-focus-hover-color);
+}
+
+.article__text-link:hover {
+  border-block-end: solid 2px var(--link-focus-hover-color);
+}
+
 .article__text-link {
   color: var(--text-color);
   text-decoration: none;
@@ -214,7 +234,8 @@
 }
 
 .footer-title {
-  padding: 200px 0 0;
+  margin: 0;
+  padding-block-start: 288px;
   color: var(--header-color);
   font-size: var(--footer-title-size-mobile);
   line-height: 82.5%;
@@ -265,27 +286,27 @@
   }
 
   .header__theme-menu-list {
-    margin-inline-end: 12px;
-    margin-block-end: 176px;
+    padding-inline-end: 20px;
+    padding-block-end: 159px;
   }
 
   .header__title {
-    margin-block-end: 161px;
-    margin-inline-start: -8px;
+    padding-block-end: 144px;
+    padding-inline-start: 0px;
   }
 
   .header__text {
     max-width: 364px;
-    margin-inline-end: 12px;
-    margin-block-end: 191px;
+    margin-inline-end: 20px;
+    margin-block-end: 183px;
   }
 
   .main {
     gap: 81px;
-    margin-block-start: 53px;
-    margin-inline-end: 12px;
-    margin-block-end: 52px;
-    margin-inline-start: 12px;
+    margin-block-start: 60px;
+    margin-inline-end: 20px;
+    margin-block-end: 60px;
+    margin-inline-start: 20px;
   }
 
   .section__reason {
@@ -305,7 +326,6 @@
   .section__advice {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(6, max-content);
-    column-gap: 17px;
   }
 
   .gallery__item {
@@ -345,7 +365,8 @@
   }
 
   .footer-title {
-    padding: 373px 0 0;
+    padding-block-start: 463px;
+    font-size: var(--footer-title-size-desk-tab);
   }
 
   .footer_decorated-zone::before {
@@ -373,24 +394,25 @@
   .header__theme-menu {
     grid-row: 1/1;
     justify-self: center;
-    margin: -70px 29px 0 0;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
     gap: 11px;
+    padding-inline-end: 0;
+    padding-block-end: 205px;
+    padding-inline-start: 0;
   }
 
   .header__title {
-    margin-block-end: 79px;
-    margin-inline-start: -8px;
+    padding-block-end: 48px;
     font-size: var(--header-title-size-desk-tab);
   }
 
   .header__text {
     max-width: 491px;
-    margin-inline-end: 12px;
-    margin-block-end: 143px;
+    margin-inline-end: 20px;
+    margin-block-end: 135px;
   }
 
   .section__reason {
@@ -415,7 +437,6 @@
 
   .section__advice {
     column-gap: 10px;
-    margin-block-start: -2px;
   }
 
   .footer {
@@ -423,8 +444,7 @@
   }
 
   .footer-title {
-    padding: 199px 0 0;
-    font-size: var(--footer-title-size-desk-tab);
+    padding-block-start: 320px;
   }
 
   .footer_decorated-zone::before {
