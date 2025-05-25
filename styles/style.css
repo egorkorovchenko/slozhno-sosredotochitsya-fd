@@ -48,11 +48,11 @@
   position: absolute;
   top: -7px;
   right: 39px;
+  display: var(--rec_display);
   color: var(--decor-color);
   font-weight: normal;
   font-size: var(--content-font-size);
   text-transform: uppercase;
-  display: var(--rec_display);
 }
 
 .record::after {
@@ -78,17 +78,17 @@
 }
 
 .header__theme-menu-item:focus-visible {
-  outline: none;
   border-block-end: 1px solid var(--menu-item-color);
+  outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
   border-block-end: 1px solid var(--menu-item-color);
+  outline: none;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--hover-color)
+  outline: 1px solid var(--hover-color);
 }
 
 .header__theme-menu-button {
@@ -111,8 +111,8 @@
 .header__title {
   justify-self: start;
   margin: 0;
-  padding-block-end: 38px;
   padding-inline-start: 10px;
+  padding-block-end: 38px;
   color: var(--header-color);
   font-size: var(--header-title-size-mobile);
   line-height: 82.5%;
@@ -137,10 +137,10 @@
   display: flex;
   flex-direction: column;
   gap: 51px;
-  margin-block-start: 41px;
-  margin-inline-end: 10px;
-  margin-block-end: 40px;
   margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  margin-block-start: 41px;
+  margin-block-end: 40px;
 }
 
 .section__reason {
@@ -182,10 +182,10 @@
 }
 
 .section__title-intro {
-  margin-block-start: 1px;
-  margin-inline-end: 0;
-  margin-block-end: 0;
   margin-inline-start: 2px;
+  margin-inline-end: 0;
+  margin-block-start: 1px;
+  margin-block-end: 0;
   color: var(--title-color);
   font-size: var(--content-font-size);
 }
@@ -201,10 +201,10 @@
 }
 
 .article__text {
-  margin-block-start: 10px;
-  margin-inline-end: 0;
-  margin-block-end: 0;
   margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 10px;
+  margin-block-end: 0;
   color: var(--text-color);
   font-weight: normal;
   font-size: var(--content-font-size);
@@ -291,8 +291,8 @@
   }
 
   .header__title {
-    padding-block-end: 144px;
     padding-inline-start: 0px;
+    padding-block-end: 144px;
   }
 
   .header__text {
@@ -303,10 +303,10 @@
 
   .main {
     gap: 81px;
-    margin-block-start: 60px;
-    margin-inline-end: 20px;
-    margin-block-end: 60px;
     margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    margin-block-start: 60px;
+    margin-block-end: 60px;
   }
 
   .section__reason {
@@ -399,9 +399,9 @@
   .header__theme-menu-list {
     flex-direction: row;
     gap: 11px;
+    padding-inline-start: 0;
     padding-inline-end: 0;
     padding-block-end: 205px;
-    padding-inline-start: 0;
   }
 
   .header__title {
