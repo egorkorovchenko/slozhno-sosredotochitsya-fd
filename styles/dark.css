@@ -11,6 +11,7 @@
   */
   --bg-image: url("../images/cover-image-dark.png");
   --decor-color: #ff0070;
+  --decorated-zone-color: #ff0070;
   --bg-color: #000028;
   --header-color: #db00ff;
   --title-color: #000028;
@@ -19,7 +20,7 @@
   --rec_display: block;
   --hover-color: rgb(255 0 112 / 0.4);
   --menu-item-color: #ff0070;
-  --link-focus-hover-color: #ff0070;
+  --link-focus-hover-color: #f1b2ce;
 }
 
 .theme-dark .page {

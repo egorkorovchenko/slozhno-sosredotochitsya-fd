@@ -11,6 +11,7 @@
   */
   --bg-image: url("../images/cover-image-light.png");
   --decor-color: #ff8dcb;
+  --decorated-zone-color: #353430;
   --bg-color: #fef1f7;
   --header-color: #ffc2e6;
   --title-color: #353430;
@@ -27,6 +28,7 @@
     /* Дублируем переменные светлой темы */
     --bg-image: url("../images/cover-image-light.png");
     --decor-color: #ff8dcb;
+    --decorated-zone-color: #353430;
     --bg-color: #fef1f7;
     --header-color: #ffc2e6;
     --title-color: #353430;
