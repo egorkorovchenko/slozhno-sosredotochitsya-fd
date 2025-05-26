@@ -231,24 +231,6 @@
   text-shadow: 2px 2px var(--decor-color);
 }
 
-.decorated-zone::before {
-  content: "";
-  position: absolute;
-  border-top: var(--decorated-zone-color) 1px solid;
-  border-right: var(--decorated-zone-color) 1px solid;
-  block-size: 24px;
-  inline-size: 24px;
-}
-
-.decorated-zone::after {
-  content: "";
-  position: absolute;
-  border-bottom: var(--decorated-zone-color) 1px solid;
-  border-left: var(--decorated-zone-color) 1px solid;
-  block-size: 24px;
-  inline-size: 24px;
-}
-
 /* для 768x1024 */
 @media (width >= 768px) {
   .header {
