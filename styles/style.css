@@ -377,7 +377,7 @@
   .section__title-alt {
     grid-column: 1/4;
     grid-row: 1;
-    max-inline-size: 315px;
+    max-inline-size: 32%;
   }
 
   .identification__article {
